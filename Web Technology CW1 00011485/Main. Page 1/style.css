@@ -132,6 +132,76 @@
 
 
 
+/* LANDING PAGE STARTS HERE */
+
+.landing-wrapper{
+    background-image: url(../Assets/landing_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0;
+    padding-bottom: 0;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-page .page-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.landing-page .page-content h1 span {
+    color: rgb(0, 113, 220);
+}
+
+
+.landing-page .page-content h4{
+    color: #808191;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.landing-page .page-content input{
+    width: 70%;
+    font-size: 16px;
+    padding: 20px 25px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.landing-page .page-content button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 20px 25px;
+    background-color: rgb(0, 113, 220);
+    color: white;
+    cursor: pointer;
+}
+
+
+.landing-page .page-image{
+    width: 40%;
+    text-align: center;
+}
+
+.landing-page .page-image img{
+    width: 100%;
+}
+
+
+/* LANDING PAGE ENDS HERE */
+
+
+
+
 
 
 /* RESPONSIVENESS OF THE WEB PAGE */
