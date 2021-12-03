@@ -193,7 +193,7 @@
 }
 
 .landing-page .page-image img{
-    width: 100%;
+    width: 110%;
 }
 
 
@@ -209,7 +209,7 @@
     align-items: center;
     padding: 30px 0;
     border-bottom: 1px solid rgb(222, 222, 222);
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .quick-info .q-info-course {
@@ -229,13 +229,76 @@
 
 .quick-info .q-info-course .info-course-text h4{
     font-size: 16px;
-    color: #11142D;
 }
 
 .quick-info .q-info-course .info-course-text p{
     font-size: 14px;
     color: #808191;
 }
+
+/* QUICK INFO ENDS HERE  */
+
+
+/* POPULAR COURSES STARTS HERE */
+
+.popular-courses .popular-courses-heading {
+    font-size: 30px;
+}
+
+
+.popular-courses .popular-course-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.popular-courses .popular-course-filter .popular-course-filter-list {
+    width: 55%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.popular-courses .popular-course-filter .popular-course-filter-list button{
+    font-size: 14px;
+    outline: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f8fc;
+    color: #808191;
+    cursor: pointer;
+}
+
+.popular-courses .popular-course-filter .popular-course-filter-list-change button {
+    background-color: #fbfcff;
+    font-size: 14px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #e5f1fb;
+    color: #808191;
+    cursor: pointer;
+}
+
+.popular-courses .popular-course-filter .popular-course-filter-list .allcourses {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 14px 30px;
+    background-color: rgb(0, 113, 220);
+    color: white;
+    cursor: pointer;
+}
+
+/* POPULAR COURSES STARTS HERE */
+
+
 
 
 /* RESPONSIVENESS OF THE WEB PAGE */
