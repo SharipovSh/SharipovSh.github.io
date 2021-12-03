@@ -311,6 +311,7 @@
     border-radius: 10px;
     margin: auto;
     width: 90%;
+    margin-bottom: 75px;
 }
 
 .popular-courses .popular-course-image {
@@ -408,6 +409,65 @@
 
 
 
+/* EASY COURSE STARTS HERE */
+
+
+.easy-course-wrapper {
+    background-image: url(../Assets/easy-online-courses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 99;
+}
+
+.easy-course-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #004e98;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.easy-course-wrapper .easy-course {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.easy-course-wrapper .easy-course h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.easy-course-wrapper .easy-course h4 {
+    color: white;
+    font-weight: 100;
+}
+
+.easy-course-wrapper .easy-course .easy-course-discover button {
+    border: none;
+    outline: none;
+    padding: 17px 35px;
+    background-color: rgb(0, 113, 220);
+    cursor: pointer;
+}
+
+.easy-course-wrapper .easy-course .easy-course-discover button a {
+    color: white;
+    font-size: 16px;
+}
+
+/* EASY COURSE ENDS HERE */
 
 /* RESPONSIVENESS OF THE WEB PAGE */
 
