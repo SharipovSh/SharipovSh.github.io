@@ -251,7 +251,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .popular-courses .popular-course-filter .popular-course-filter-list {
@@ -296,7 +297,114 @@
     cursor: pointer;
 }
 
-/* POPULAR COURSES STARTS HERE */
+
+
+.popular-courses .popular-courses-lists {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+}
+
+.popular-courses .popular-course-item {
+    border: 1px solid #e5f1fb;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+.popular-courses .popular-course-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popular-courses .popular-course-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.popular-courses .popular-course-content {
+    padding: 15px;
+}
+.popular-courses .popular-course-content a{
+    font-size: 18px;
+    font-weight: 600;
+}
+.popular-courses .popular-course-item .popular-course-instructor-and-ranking {
+    border-bottom: 1px solid #e5f1fb;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 94%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+}
+
+.popular-courses .popular-course-instructor-and-ranking .popular-course-ranking {
+    text-align: right;
+}
+
+
+.popular-courses .popular-course-instructor-and-ranking .popular-course-ranking img{
+    width: 55%;
+}
+
+.popular-courses .popular-course-instructor-and-ranking .popular-course-instructor-image {
+    width: 27%;
+}
+
+.popular-courses .popular-course-instructor-and-ranking .popular-course-instructor-image img{
+    width: 100%;
+}
+.popular-courses .popular-course-instructor-and-ranking .popular-course-instructor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.popular-courses .popular-course-instructor-and-ranking .popular-course-instructor img {
+    margin-right: 10px;
+}
+
+.popular-courses .popular-course-instructor-and-ranking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.popular-courses .popular-course-image img {
+    width: 100%;
+}
+
+.popular-courses .popular-course-item .populor-course-name {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.popular-courses .popular-course-item .populor-course-name h4 {
+    font-weight: 100;
+    color: #808191;
+}
+
+.popular-courses .popular-course-item .populor-course-name h5 {
+    font-weight: 600;
+    color: rgb(0, 113, 220)
+}
+
+.popular-courses .popular-course-item .populor-course-name h5 {
+    font-size: 16px;
+}
+
+/* .popular-courses .popular-courses-lists .popular-course-item .popular-course-name {
+    padding: 10px 15px;
+} */
+
+/* POPULAR COURSES ENDS HERE */
 
 
 
