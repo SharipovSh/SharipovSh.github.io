@@ -468,6 +468,9 @@
     font-size: 16px;
 }
 
+/* EASY COURSE ENDS HERE */
+
+
 
 /* INSTRUCTOR - STUDENT STARTS HERE */
 
@@ -477,7 +480,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    margin-bottom: 70px;
 }
 
 .instructor-student div {
@@ -540,10 +543,83 @@
 }
 
 
-/* INSTRUCTOR - STUDENT STARTS HERE */
+/* INSTRUCTOR - STUDENT ENDS HERE */
+
+/* ABOUT INSTRUCTORS STARTS HERE */
+
+.about-instructor {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-instructor .ourInstructor {
+    background-color: #f7f8fc;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.about-instructor .ourInstructor .ourInstructor-name {
+    display: inline-block;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.about-instructor .ourInstructor:hover img {
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+
+.about-instructor .ourInstructor h5 {
+    font-weight: 100;
+    color: #808191;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.about-instructor .ourInstructor-image {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-instructor .ourInstructor-image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 1s;
+}
+
+.about-instructor .ourInstructor .ourInstructor-accounts {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-instructor .ourInstructor .ourInstructor-accounts .fab {
+    background-color: rgb(0, 113, 220);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about-instructor .ourInstructor .ourInstructor-accounts .fab:hover {
+    transform: translateY(-10px) scale(1.1, 1.1);
+    transition: 0.5s;
+}
 
 
-/* EASY COURSE ENDS HERE */
 
 /* RESPONSIVENESS OF THE WEB PAGE */
 
