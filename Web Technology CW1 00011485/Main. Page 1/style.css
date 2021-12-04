@@ -420,6 +420,7 @@
     position: relative;
     background-attachment: fixed;
     z-index: 99;
+    margin-bottom: 70px;
 }
 
 .easy-course-wrapper::after {
@@ -466,6 +467,81 @@
     color: white;
     font-size: 16px;
 }
+
+
+/* INSTRUCTOR - STUDENT STARTS HERE */
+
+
+.instructor-student {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.instructor-student div {
+    background-color: #f7f8fc;
+    padding: 45px 55px;
+    border-radius: 15px;
+}
+
+.instructor-student .instructor {
+    width: 48%;
+}
+
+.instructor-student .instructor h2,
+.instructor-student .student h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.instructor-student .instructor a,
+.instructor-student .student a {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 17px 35px;
+    background-color: rgb(0, 113, 220);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.instructor-student .instructor p,
+.instructor-student .student p {
+    font-size: 16px;
+    line-height: 35px;
+    color: #808191;
+    margin-bottom: 50px;
+} 
+
+.instructor-student .instructor .instructor-image {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.instructor-student .student .student-image {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.instructor-student .student {
+    width: 48%;
+}
+
+.instructor-student .instructor:hover h2,
+.instructor-student .student:hover h2 {
+    color: rgb(0, 113, 220);
+    transition: 0.5s;
+}
+
+
+/* INSTRUCTOR - STUDENT STARTS HERE */
+
 
 /* EASY COURSE ENDS HERE */
 
