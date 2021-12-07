@@ -181,10 +181,12 @@
     padding: 15px;
     width: 40%;
 }
-
+.form .form-image img {
+    width: 100%;
+}
 .form .form-inputs h2 {
     font-size: 27px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .form .form-inputs .inputs .fa-user,
@@ -404,10 +406,8 @@ footer {
     }
 
     .form .form-inputs {
-        width: 90%;
+        width: 90% !important;
     }
-
-
 }
 
 
