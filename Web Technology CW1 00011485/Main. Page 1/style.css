@@ -228,6 +228,14 @@
     margin-bottom: 80px;
 }
 
+.quick-info .q-info-part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
 .quick-info .q-info-course {
     display: flex;
     flex-direction: row;
@@ -318,7 +326,7 @@
 .popular-courses .popular-courses-lists {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    
 }
 
@@ -432,7 +440,7 @@
     background-image: url(../Assets/easy-online-courses.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    padding: 100px 0;
     position: relative;
     background-attachment: fixed;
     z-index: 99;
@@ -841,11 +849,184 @@
  }
 
 /* RESPONSIVENESS OF THE WEB PAGE */
+@media (max-width: 710px) {
+    
+    .container {
+        width: 100% !important;
+    }
 
+    .category .lists{
+        width: 100% !important;
+    }
+
+    .category .lists .d-none {
+        display: none;
+    }
+
+
+    /* LANDING PAGE STARTS HERE */
+    .landing-page .page-content h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+        /* LANDING PAGE STARTS HERE */
+    .landing-page .page-content h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    /* LANDING PAAGE ENDS HERE  */
+
+
+    /* QUICK INFO STARTS HERE  */
+
+
+    .quick-info {
+        flex-direction: column; 
+    }
+
+    .quick-info .q-info-part1  {
+        width: 90%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+   /* QUICK INFO ENDS HERE  */
+
+
+   /* POPULAR COURSE STARTS HERE  */
+
+   .popular-courses {
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+
+   .popular-courses .popular-courses-heading,
+   .blogs .Blogs-heading {
+        font-size: 24px;
+    }
+
+    .popular-courses .popular-course-filter .popular-course-filter-list {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        
+    }
+
+    /* popular course header ends here  */
+   
+
+    .popular-courses {
+        width: 98% !important;
+        margin: auto;
+    }
+    .popular-courses .popular-courses-lists {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+
+
+    .easy-course-wrapper {
+        padding: 75px 0;
+    }
+
+    .easy-course-wrapper .easy-course {
+        width: 95% !important;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .easy-course-wrapper .easy-course h2 {
+        font-size: 24px;
+    }
+    
+    .easy-course-wrapper .easy-course h4 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .easy-course-wrapper .easy-course .easy-course-discover button {
+        font-size: 12px;
+    }
+    
+    .easy-course-wrapper .easy-course .easy-course-discover button a {
+        font-size: 16px;
+    }
+
+
+    .instructor-student {
+        flex-direction: column;
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .instructor-student .instructor,
+    .instructor-student .student {
+        width: 95% !important;
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .about-instructor {
+        width: 95% !important;
+        margin: auto;
+        margin-top: 70px;
+    }
+    
+    .about-instructor .ourInstructors{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .blogs {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .blogs .blog-wrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .blogs .blog-wrapper .blog-theme {
+        font-size: 18px;
+    }
+
+    .blogs .blog-wrapper .blog-content p {
+        font-size: 14px !important;
+    }
+
+
+    .footer {
+        width: 95% !important;
+        margin: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    footer .footer-bottom {
+        flex-direction: column;
+     }
+
+     footer .footer-bottom .footer-bottom-icons {
+         width: 80% !important;
+         max-width: 350px !important;
+     }
+}
 
 @media (max-width: 1000px) {
     .container {
-        width: 676px;
+        width: 646px;
         max-width: 767px;
     }
 
@@ -894,6 +1075,26 @@
 
 
 
+    /* QUICK INFO STARTS HERE */
+
+    .quick-info .q-info-course {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quick-info .q-info-course .info-course-text h4 {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .quick-info .q-info-course .info-course-text p {
+        font-size: 12px;
+    }
+
+    .instructor-student .instructor {
+        width: 49%;
+    }
+
     /* LANDING PAGE STARTS HERE */
 
     
@@ -918,6 +1119,22 @@
     .landing-page .page-image {
         display: none;
     }
+
+
+     /* POPULAR COURSES STARTS HERE */
+
+    .popular-courses .popular-course-filter {
+        width: 100%;
+    }
+    .popular-courses .popular-course-filter .popular-course-filter-list {
+        width: 100% !important;
+    }
+
+    .popular-courses .popular-course-filter .popular-course-filter-list-change {
+     display: none;
+    }
+ 
+    /* POPULAR COURSES ENDS HERE  */
 
 
 
