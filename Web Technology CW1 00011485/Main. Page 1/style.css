@@ -855,6 +855,38 @@
         width: 100% !important;
     }
 
+    .header-mobile-registration {
+        flex-direction: column !important;
+    }
+
+    .header-mobile-registration a {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .header-mobile-registration #log-in-mobile {
+        margin-bottom: 25px;
+        border: 1px solid #e5f1fb ;
+
+    }
+    
+    .header-mobile-registration .reg-search-box {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .header-mobile-registration .reg-search-box input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #header.open {
+        height: 300px !important;
+        transition: 0.5s;
+    }
+
     .category .lists{
         width: 100% !important;
     }
@@ -896,37 +928,38 @@
 
    /* POPULAR COURSE STARTS HERE  */
 
-   .popular-courses {
-       padding-left: 15px;
-       padding-right: 15px;
-   }
+    .popular-courses {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-   .popular-courses .popular-courses-heading,
-   .blogs .Blogs-heading {
-        font-size: 24px;
+    .popular-courses .popular-courses-heading,
+    .blogs .Blogs-heading {
+            font-size: 24px;
     }
 
     .popular-courses .popular-course-filter .popular-course-filter-list {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
         
     }
 
-    /* popular course header ends here  */
+    .popular-courses .popular-course-item {
+        width: 100% !important;
+    }
+
+    /* popular course header starts here  */
    
 
-    .popular-courses {
-        width: 98% !important;
-        margin: auto;
-    }
+
     .popular-courses .popular-courses-lists {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
     }
 
-
+   /* popular course header ends here  */
 
     .easy-course-wrapper {
         padding: 75px 0;
