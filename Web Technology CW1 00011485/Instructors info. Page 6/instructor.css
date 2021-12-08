@@ -457,6 +457,71 @@
 }
 
 
+
+
+
+
+
+
+
+.students-ideas-wrapper {
+    
+    padding: 40px 0;
+}
+
+.students-idea .ideas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.students-idea .student-theme {
+    margin-bottom: 15px;
+    padding: 20px 0;
+}
+
+
+.students-idea .ideas .student {
+    width: 48%;
+    background-color: #e5f1fb;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.students-idea .ideas .student:nth-child(1) {
+    background-color: #e9f8f7;
+}
+
+.students-idea .ideas .student .student-info {
+    padding: 20px 0;
+}
+
+
+.students-idea .ideas .student .student-img-name img {
+    margin-right: 10px;
+}
+
+.students-idea .ideas .student-info,
+.students-idea .ideas .student-info .student-img-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.students-idea .ideas .student .student-comment {
+    padding: 20px 0;
+    padding-top: 0;
+}
+
+.students-idea .ideas .student .student-comment p{ 
+    color: #808191;
+    font-size: 16px;
+}
+
+
 /* FOOTER STARTS HERE */
 
 footer {
