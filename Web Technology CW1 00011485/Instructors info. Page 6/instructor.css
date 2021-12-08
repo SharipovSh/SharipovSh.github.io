@@ -1,4 +1,4 @@
-       * {
+            * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -340,6 +340,27 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
 }
+
+.instructor-info .instructor-videos .instructor-filters {
+}
+.instructor-info .instructor-videos .instructor-filters button{
+    border: none;
+    outline: none;
+    font-size: 21px;
+    padding: 17px 35px;
+    background-color: transparent;
+    color: #11142D;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.instructor-info .instructor-videos .instructor-filters #courselist {
+    border-right: 3px solid #e5f1fb;
+    padding-left: 0;
+    color: rgb(0, 113, 220);
+    font-weight: 400 ;
+}
+
 
 .popular-course-item {
     border: 1px solid #e5f1fb;
