@@ -1,4 +1,4 @@
-            * {
+     * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -522,6 +522,91 @@
 }
 
 
+
+
+
+/* BLOGS STARTS HERE  */
+
+
+.blogs {
+    margin-bottom: 100px;
+ }
+
+.blogs .blog-wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+
+.blogs .Blogs-heading {
+    font-size: 30px;
+}
+
+.blogs .Blogs-heading {
+    margin-bottom: 70px;
+}
+.blogs .blog-wrapper .blog-image {
+    margin-bottom: 20px;
+}
+.blogs .blog-wrapper .blog-image img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+.blogs .blog-wrapper .blog-theme {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blogs .blog-wrapper .blog-date {
+    font-weight: 100;
+    color: #808191;
+    margin-bottom: 15px;
+}
+
+.blogs .blog-wrapper .blog-content p{
+    color: #808191;
+    font-size: 14px;
+    color: #808191;
+    font-weight: 100;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.blogs .blog-wrapper .blog-read-more {
+    color: rgb(0, 113, 220);
+    font-size: 14px;
+}
+
+.blogs .blog-wrapper .blog-read-more:hover i{
+    animation: 1s blogReadMore infinite;
+}
+
+@keyframes blogReadMore {
+    50%{
+        transform: translate(5px, 5px);
+    }
+}
+.blogs .blog-wrapper .blog-read-more i {
+    color: rgb(0, 113, 220);
+    font-size: 27px;
+    font-weight: 100;
+    margin-left: 5px;
+    transform: translateY(5px);
+    
+}
+
+
+
+
+ /* BLOGS ENDS HERE  */
+
+
+
+
 /* FOOTER STARTS HERE */
 
 footer {
@@ -698,10 +783,33 @@ footer {
         margin: auto;
     }
 
+    .blogs {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .blogs .blog-wrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .blogs .blog-wrapper .blog-theme {
+        font-size: 18px;
+    }
+
+    .blogs .blog-wrapper .blog-content p {
+        font-size: 14px !important;
+    }
+
+
 }
 
 
 @media (max-width: 1000px) {
+
+    
     .container {
         width: 646px;
         max-width: 767px;
@@ -760,6 +868,19 @@ footer {
         width: 90%;
     }
 
+
+
+    .instructor-info {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .instructor-info .inst-all {
+        width: 70% !important;
+
+    }
+
+
     .footer {
         width: 95% !important;
         margin: auto;
@@ -776,4 +897,67 @@ footer {
          width: 80% !important;
          max-width: 350px !important;
      }
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+
+
+    
+      /* POPULAR COURSES STARTS HERE */
+
+      .instructor-videos-list {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        
+         }
+
+         .instructor-info .inst-all {
+            width: 45%;
+            text-align: left;
+        }
+
+         .instructor-info .instructor-videos {
+            width: 50%;
+            text-align: left;
+        }
+
+ 
+    /* POPULAR COURSES ENDS HERE  */
+
+    
+    /* BLOGS STARTS HERE */
+    .blogs .blog-wrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .blogs .blog-wrapper .blog {
+        margin-bottom: 40px;
+    }
+
+    .blogs .blog-wrapper .blog-theme {
+        margin-bottom: 20px;
+    }
+
+    .blogs .blog-wrapper .blog-date {
+        margin-bottom: 20px;
+    }
+
+    .blogs .blog-wrapper .blog-content p {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+    
+    /* BLOGS ENDS HERE */
+
+
 }
