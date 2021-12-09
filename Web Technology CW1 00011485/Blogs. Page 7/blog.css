@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #11142D;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 1150px;
+    margin: auto;
+    max-width: 1250px;
+}
+
+
+.container-fluid{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.header-wrapper {
+    box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.14);
+}
+
+.header .header-registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    background-color: white;
+    padding: 5px;
+}
+
+.header .logo-image img {
+    width: 60%;
+}
+
+.header .header-registration .reg-search-box,
+.header .header-mobile-registration .reg-search-box{ 
+    position: relative;
+    width: 50%;
+}
+
+.header .header-registration .fa-search,
+.header .header-mobile-registration .fa-search {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 113, 220);
+    border-left: 1px solid rgb(223, 224, 224);
+    padding: 8px 0px 8px 10px;
+    cursor: pointer;
+}
+
+.header .header-registration input,
+.header .header-mobile-registration input {
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    padding: 14px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f8fc;
+    color: #808191;
+}
+
+
+/* HEADER REGISTRATION LOG-IN AND SIGN-UP BUTTONS STYLE STARTS HERE */
+
+.header .header-registration a,
+.header .header-mobile-registration a {
+    background-color: #e5f1fb;
+    padding: 11px 25px;
+    border-radius: 5px;
+    color: rgb(0, 113, 220);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header .header-registration #log-in,
+.header .header-mobile-registration #log-in-mobile {
+    background-color: transparent;
+    color: #808191;
+  
+}
+
+.header .header-registration #log-in:hover,
+.header .header-mobile-registration #log-in-mobile:hover {
+    color: rgb(14, 16, 17);
+    transition: 0.2s;
+}
+
+.header .header-registration #sign-up:hover,
+.header .header-mobile-registration #sign-up-mobile:hover {
+    color: rgb(32, 3, 3);
+    background-color: rgb(0, 113, 220);
+    transition: 0.5s;
+}
+
+.header .header-mobile-burger {
+    display: none;
+}
+
+.header-mobile-registration {
+    display: none;
+}
+
+/* HEADER REGISTRATION LOG-IN AND SIGN-UP BUTTONS STYLE ENDS HERE */
+
+
+
+
+/* CATEGORY SECTION STYLE STARTS HERE */  
+
+.category-wrapper {
+    box-shadow: 0px 1px 5px -3px rgba(0,0,0,0.14);
+    padding: 15px 15px;
+    padding-left: 35px;
+}
+
+.category .lists{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category .lists a {
+    color: #11142D;
+    font-size: 16px;
+}
+
+
+/* CATEGORY SECTION STYLE ENDS HERE */  
+
+
+
+/* CURRENT PAGE STARTS HERE */
+
+.current-page-wrapper {
+    background-color: #F9FAFD;
+    padding: 70px 0;
+    line-height: 75px;
+    border: 1px solid #e5f1fb;
+}
+
+.current-page-wrapper h3 {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.current-page-wrapper h1 {
+    font-size: 45px;
+}
+.current-page-wrapper h3 span {
+    color: rgb(0, 113, 220);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* CURRENT PAGE ENDS HERE */
+
+
+ /* SEARCH BLOG STARTS HERE */
+
+ .search-blogs {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 0;
+     border-bottom: 1px solid #e5f1fb;
+     margin-bottom: 100px;
+ }
+
+ .search-blogs .blog-filter {
+     width: 55%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .search-blogs .blog-search {
+     width: 25%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 10px;
+ }
+ 
+ .search-blogs .blog-search input{
+     padding: 5px 10px;
+     width: 80%;
+     border: none;
+     outline: none;
+  }
+
+  .search-blogs .blog-search i {
+      color: rgb(0, 113, 220);
+  }
+
+
+  /* SEARCH BLOG ENDS HERE */
+
+
+  /* ARTICLES STARTS HERE */
+  #development-articles,
+  #design-articles {
+      margin-bottom: 100px;
+  }
+  #development-articles .article-theme,
+  #design-articles .article-theme{
+      margin-bottom: 40px;
+  }
+
+  #development-articles .article-theme h2,
+  #design-articles .article-theme h2 {
+      font-size: 31px;
+  }
+
+ 
+  #development-articles  .articles,
+  #design-articles .articles {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #development-articles .articles .article,
+  #design-articles .articles .article{
+      position: relative;
+      border: 1px solid #e5f1fb;
+      
+  }
+
+  #design-articles .articles .article {
+      padding-bottom: 10px;
+  }
+
+  #development-articles  .article .blog-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 15px 25px;
+  }
+
+  #development-articles  .article .blog-content h3 {
+      margin-bottom: 10px;
+      color: #11142D;
+  }
+
+  #development-articles  .article .blog-content p {
+    font-weight: 100;
+    color: #11142D;
+    
+}
+
+
+#design-articles .articles .blog-read {
+    padding: 0 15px;
+}
+
+#design-articles .articles .blog-read button{
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #e5f1fb;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+  #development-articles  .articles .article-img,
+  #design-articles .articles .article-img {
+      position: relative;
+      
+  }
+
+  #development-articles  .articles .article-img img,
+  #design-articles .articles .article-img img {
+      width: 100%;
+      
+  }
+
+
+  
+  #design-articles .articles .article .blog-content-m {
+      padding: 15px;
+  }
+
+
+  #design-articles .articles .article .blog-content-m h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+
+  #design-articles .articles .article .blog-content-m p {
+      color: #808191;
+      font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+  /* ARTICLES ENDS HERE */
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS OF THE WEB PAGE */
+@media (max-width: 710px) {
+   
+    .container {
+        width: 100% !important;
+    }
+
+
+
+    .header-mobile-registration {
+        flex-direction: column !important;
+    }
+
+
+
+    .header-mobile-registration a {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .header-mobile-registration #log-in-mobile {
+        margin-bottom: 25px;
+        border: 1px solid #e5f1fb ;
+
+    }
+    
+    .header-mobile-registration .reg-search-box {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .header-mobile-registration .reg-search-box input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #header.open {
+        height: 300px !important;
+        transition: 0.5s;
+    }
+
+    .category .lists{
+        width: 100% !important;
+    }
+
+    .category .lists .d-none {
+        display: none;
+    }
+
+    .current-page-wrapper h1 {
+        font-size: 35px;
+    }
+
+    .current-page-wrapper div {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .search-blogs  {
+        width: 95% !important;
+    }
+
+    .search-blogs .blog-filter {
+        display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    #development-articles,
+    #design-articles {
+        width: 95% !important;
+    }
+
+    
+    #development-articles .article,
+    #design-articles .article {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 646px;
+        max-width: 767px;
+    }
+
+    /* HEADER STARTS HERE */
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(1, auto);
+        overflow-y: hidden;
+        height: 85px;
+        transition: 0.5s;
+    }
+
+    #header.open {
+        height: 170px;
+        transition: 0.5s;
+    }
+
+
+
+    .header-mobile-registration {
+        display: block;
+        grid-column: span 2 ;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+
+    .header .header-registration {
+        display: none;
+    }
+
+    .header .header-mobile-burger {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .header .header-mobile-burger .fad {
+        font-size: 27px;
+    }
+
+    .header .header-registration .fa-search,
+    .header .header-mobile-registration .fa-search {
+        top: 35%;
+    }
+
+    /* HEADER ENDS HERE */
+
+
+    
+    .search-blogs {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .search-blogs .blog-search {
+        width: 50% !important;
+    }
+
+    .search-blogs .blog-filter {
+        width: 100% !important;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .category-wrapper .category .lists {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .search-blogs .blog-filter {
+        width: 70%;
+    }
+
+    /* #development-articles .articles .article .blog-content p {
+        
+    } */
+
+    #development-articles  .article .blog-content {
+        position: relative;
+    }
+
+    #development-articles  .article .blog-content h3 {
+        margin-bottom: 20px;
+    }
+
+
+}
+
