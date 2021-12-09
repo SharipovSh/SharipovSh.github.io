@@ -1,4 +1,5 @@
-      * {
+          
+     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -197,7 +198,6 @@
 
     .course-info-wrapper .course-syllabus{
         width: 32%;
-        background-color: #f7f8fc;
     }
 
     .course-info-wrapper .course-details .course-image {
@@ -360,6 +360,68 @@
     .course-info-wrapper .course-details .course-requirements .requirement div p,
     .course-info-wrapper .course-details .course-requirements .course-skills div p {
         color: #808191;
+    }
+
+
+
+    .course-info-wrapper .course-syllabus {
+        border: 1px solid #f7f8fc;
+    }
+
+    .course-info-wrapper .course-syllabus .section-theme {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+    .course-info-wrapper .course-syllabus .section-theme i {
+        font-size: 18px;
+        font-weight: 400;
+        color: #808191;
+        
+    }
+
+    .course-info-wrapper .course-syllabus h3 {
+        font-size: 24px;
+        padding: 20px 10px;
+        border-bottom: 1px solid #f7f8fc;
+    }
+
+    .course-info-wrapper .course-syllabus .syllabus-section {
+        padding: 20px;
+        padding-bottom: 10px;
+        border-right: 1px solid #e5f1fb;
+        cursor: pointer;
+    }
+
+    .course-info-wrapper .course-syllabus .syllabus-section i{
+        color: rgb(0, 113, 220);
+    }
+
+    .course-info-wrapper .course-syllabus .syllabus-section h4{
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    .course-info-wrapper .course-syllabus .syllabus-section p {
+        color: #808191;
+        font-weight: 100;
+        display: contents;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .course-info-wrapper .course-syllabus .syllabus-section .section-content {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+
+
+    .course-info-wrapper .course-syllabus .syllabus-section:hover .syllabus-section {
+        padding-bottom: 0;
     }
     
     
@@ -549,6 +611,41 @@
            margin: auto;
            
        }
+
+       
+    .course-info-wrapper {
+        flex-direction: column;
+        width: 95% !important;
+    }
+    
+    
+    .course-info-wrapper .course-details{
+        width: 100%;
+    }
+
+    .course-info-wrapper .course-details .course-ranking {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+    .course-info-wrapper .course-details .course-ranking .instructor-info {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+
+    .course-info-wrapper .course-details .course-ranking .course-date,
+    .course-info-wrapper .course-details .course-ranking  .course-enrolled
+    {
+        margin-bottom: 15px;
+    }
+    
+    .course-info-wrapper .course-syllabus{
+        width: 100%;
+    }
+
     }
 
     
@@ -613,6 +710,23 @@
     }
 
     
+
+    .course-info-wrapper {
+        flex-direction: column;
+    }
+    
+    
+    .course-info-wrapper .course-details{
+        width: 100%;
+    }
+
+    
+    .course-info-wrapper .course-syllabus{
+        width: 100%;
+    }
+
+
+    
     
     .footer {
             width: 95% !important;
@@ -630,6 +744,9 @@
              width: 80% !important;
              max-width: 350px !important;
          }
+
+
+
 }
 
 
@@ -650,8 +767,17 @@
         .header .header-registration {
             width: 60%;
         }
-        
+    
+
+        .course-info-wrapper .course-details .course-requirements .requirement div i,
+        .course-info-wrapper .course-details .course-requirements .requirement div p,
+        .course-info-wrapper .course-details .course-requirements .course-skills div i,
+        .course-info-wrapper .course-details .course-requirements .course-skills div p{
+            display: inline;
+        }
 }
+
+
 
 
 
