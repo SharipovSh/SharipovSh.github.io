@@ -1,4 +1,4 @@
-         
+        
      * {
         padding: 0;
         margin: 0;
@@ -251,6 +251,10 @@
         margin-bottom: 40px;
     }
 
+    .course-info-wrapper .course-details .course-price-info {
+        margin-bottom: 70px
+    }
+
 
     .course-info-wrapper .course-details .course-price-info h4 {
         font-size: 35px;
@@ -292,7 +296,36 @@
 
     }
 
+        
+    .course-info-wrapper .course-details  .course-overview {
+    }
 
+    .course-info-wrapper .course-details  .course-overview .course-overview-filter{
+        margin-bottom: 40px;
+    }
+    .course-info-wrapper .course-details  .course-overview .course-overview-filter button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 25px 25px;
+        background-color: rgb(255, 255, 255);
+        color: #11142D;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .course-info-wrapper .course-details  .course-overview .course-overview-filter .overview {
+        border-bottom: 5px solid rgb(0, 113, 220);
+    }
+
+
+    .course-info-wrapper .course-details  .course-overview .course-description {
+        line-height: 35px;
+    }
+
+    .course-info-wrapper .course-details  .course-overview .course-description p{
+        color: #808191;
+    }
     /* COURSE INFO ENDS HERE */
      
     
@@ -586,9 +619,6 @@
         }
         
 }
-
-
-
 
 
 
