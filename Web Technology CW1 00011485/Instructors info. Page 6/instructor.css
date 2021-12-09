@@ -743,6 +743,13 @@
             flex-direction: column !important;
         }
     
+       
+       
+         .instructor-filters button{
+             font-size: 18px !important;
+             padding: 10px !important;
+         }
+    
     
     
         .header-mobile-registration a {
